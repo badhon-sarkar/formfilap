@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formfilap</title>
+    <style>
+        form .basic-info label{
+            display:block;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
     <header></header>
@@ -11,11 +17,36 @@
         <section>
             <h2>jamaler maer pitha ghor</h2>
             <form>
-                <label for="name">Your name</label>
+                <fieldset class="basic-info">
+                    <legend>basic in fo</legend>
+                    <label for="name">Your name</label>
                 <input type="text" name="" id="name">
                 <label for="email">Your email</label>
                 <input type="email" name="" id="email">
                 <label for="phone">Your phone number <input type="phone" name="" id="phone"></label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>pitha info</legend>
+
+                    <input type="radio" name="pitha" id="cgitoy">
+                    <label for="chitoy">CHITOY</label>
+                    <input type="radio" name="pitha" id="ppp">
+                    <label for="ppp">VAPA</label>
+                </fieldset>
+                <fieldset>
+                    <legend>vorta selection</legend>
+                    <input type="checkbox" name="vorta" id="sorisa">
+                    <label for="sorisa">SORISA</label>
+                    <input type="checkbox" name="vorta" id="sutki">
+                    <label for="sutki">SUTKI</label>
+                </fieldset>
+                <fieldset>
+                    <legend>extra info</legend>
+                    <textarea cols="25" rows="4" name="" id=""></textarea>
+                </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="clear">
             </form>
         </section>
     </main>
